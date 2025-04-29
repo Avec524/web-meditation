@@ -79,3 +79,11 @@ p {
   background-color: #005bb5;
 }
 
+
+/* === audio.js === */
+let audio = new Audio();
+function playSound(src) {
+  if (!audio.paused) audio.pause();
+  audio.src = src;
+  audio.play();
+}
